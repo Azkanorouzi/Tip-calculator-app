@@ -11,32 +11,54 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Azka Norouzi | Tip calculator app</title>
   </head>
   <body>
     <main>
-      <img src="./images/logo.svg" alt="logo" class="logo">
+      <img src="./images/logo.svg" alt="logo" class="logo" />
       <article class="calculator">
         <!-- bill -->
         <section class="bill-container">
-      <strong class="Bill-text">  Bill </strong>
-      <input type="text" name="bill" class="bill-input">
+          <strong class="Bill-text"> Bill </strong>
+          <input type="text" name="bill" class="bill-input inputs" />
         </section>
         <!-- bil end -->
         <!-- select tip section -->
-        <section class="tip-section">
-        <strong class="tip-text">  Select Tip % </strong>
-        <button class="five%">  5% </button>
-        10%
-        15%
-        25%
-        50%
-        Custom
+        <section class="tip-container">
+          <strong class="tip-text"> Select Tip % </strong>
+          <!-- percent button start -->
+          <button class="fivePercent-btn percent-btn">5%</button>
+          <button class="tenPercent-btn percent-btn">10%</button>
+          <button class="fifteenPercent-btn percent-btn">15%</button>
+          <button class="twentyFive-Percent-btn percent-btn">25%</button>
+          <button class="fiftyPercent-btn percent-btn">50%</button>
+          <button class="customPercent-btn percent-btn">Custom</button>
+          <!-- percent button end -->
         </section>
         <!-- select section end -->
-        Number of People Tip Amount /
-      person Total / person Reset
+
+        <!-- number of people -->
+
+        <section class="number-container">
+          <strong class="number-text"> Number of People </strong>
+          <input type="text" class="number-input inputs" />
+        </section>
+
+        <!-- number of people end-->
+        <!-- result section -->
+        <section class="result">
+          <div class="amount">
+            <strong class="amount-header"> Tip Amount </strong>
+            <span class="amount-text"> / person </span>
+          </div>
+          <div class="total">
+            <strong class="total-header"> Total </strong>
+            <span class="total-header"> / person </span>
+          </div>
+          <button class="Reset-btn">Reset</button>
+        </section>
+        <!-- result section end-->
       </article>
     </main>
   </body>
