@@ -5,19 +5,17 @@
  padding: 0;
  box-sizing: border-box;
  font-size: 24px;
- font-family: 'Space Mono', monospace;;
+ font-family: 'Space Mono', monospace;
+  color: hsl(186, 14%, 43%);
 }
 main{
- background: var(--bg-color);
+ background: hsl(185, 41%, 84%);
  min-height: 100vh;
- color: hsl(186, 14%, 43%);
+
 }
-:root{
---primary-color:hsl(172, 67%, 45%);
---bg-color:hsl(185, 41%, 84%);
---calculator-color:hsl(0, 0%, 100%);
---darkcyan:hsl(183, 100%, 15%);
---calculator-secondary-color:hsl(189, 41%, 97%);
+input{
+  text-align: right !important;
+  padding-right: 1rem;
 }
 .logo{
  margin:0 auto;
@@ -69,20 +67,65 @@ left:14vw;
 /* select tip section start */
 .tip-text{
   font-size: .7rem;
-  margin-left: 10%;
+  margin-left:8vw;
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .buttons-container{
   display: grid;
   grid-template-columns: 40vw 40vw;
-  grid-gap:1rem;
+  grid-gap:.5rem;
   justify-content: center;
 }
 .percent-btn{
   background: hsl(183, 100%, 15%);
   border: none;
   padding: .2rem;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .5s background;
 }
+.percent-btn:hover{
+  background: hsl(172, 67%, 45%);
+}
+.customPercent-input{
+  text-align: right;
+  color: black;
+  font-weight: 700;
+  background-color: hsl(189, 41%, 97%);
+  padding: 10px;
+  color: hsl(186, 14%, 43%);
+  border: none;
+  border-radius: 5px;
+}
+.customPercent-input::placeholder {
+  opacity: 1; 
+}
+.customPercent-input:focus{
+  outline: 2px solid hsl(172, 67%, 45%);
+}
+/* select tip section end */
+.number-container{
+  width: 80%;
+  margin:.5rem 10% ;
+}
+.number-text{
+font-size: .7rem;
+}
+.number-input{
+  height: 1.5rem;
+  width: 100%;
+  border: none;
+}
+.number-input{
+  background:hsl(189, 41%, 97%) ;
+}
+/* number-container section start */
+
+/* number-container section end */
+
 /* calculator end */
 
 
