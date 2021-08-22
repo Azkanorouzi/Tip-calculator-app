@@ -1,3 +1,71 @@
-.five-btn{
+/* generals & defaults*/
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-size: 24px;
+ font-family: 'Space Mono', monospace;;
+}
+main{
+ background: var(--bg-color);
+ min-height: 100vh;
+ color: hsl(186, 14%, 43%);
+}
+:root{
+--primary-color:hsl(172, 67%, 45%);
+--bg-color:hsl(185, 41%, 84%);
+--calculator-color:hsl(0, 0%, 100%);
+--darkcyan:hsl(183, 100%, 15%);
+--calculator-secondary-color:hsl(189, 41%, 97%);
+}
+.logo{
+ margin:0 auto;
+ display: block;
+ padding: 2rem 0;
+}
+.calculator{
+ background: hsl(0, 0%, 100%);
+ height: 85vh;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+ padding-top: 1rem;
+}
+/* calculator start */
+
+/* bill start */
+.bill-container{
+ padding-bottom: 1rem;
 
 }
+.bill-label{
+  display: block;
+  padding-left: 10%;
+   font-size: .7rem;
+}
+.bill-input{
+ width: 80%;
+ position: absolute;
+ left: 10%;
+ right: 10%;
+ border: none;
+ background:hsl(189, 41%, 97%) ;
+ height: 1.5rem;
+ border-radius: 2px;
+  padding-left: 30px;
+  font-size: 16px;
+}
+.bill-input:focus{
+  outline: none;
+
+}
+.bill-dollar-icon{
+position: relative;
+z-index: 10;
+left:14vw;
+}
+/* bill end */
+
+/* calculator end */
+
+
