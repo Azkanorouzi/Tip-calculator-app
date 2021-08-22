@@ -38,7 +38,7 @@ main{
  padding-bottom: 1rem;
 
 }
-.bill-label{
+.bill-text{
   display: block;
   padding-left: 10%;
    font-size: .7rem;
@@ -66,6 +66,23 @@ left:14vw;
 }
 /* bill end */
 
+/* select tip section start */
+.tip-text{
+  font-size: .7rem;
+  margin-left: 10%;
+}
+
+.buttons-container{
+  display: grid;
+  grid-template-columns: 40vw 40vw;
+  grid-gap:1rem;
+  justify-content: center;
+}
+.percent-btn{
+  background: hsl(183, 100%, 15%);
+  border: none;
+  padding: .2rem;
+}
 /* calculator end */
 
 
