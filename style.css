@@ -9,9 +9,10 @@
   color: hsl(186, 14%, 43%);
 }
 main{
- background: hsl(185, 41%, 84%);
  min-height: 100vh;
-
+}
+body{
+   background: hsl(185, 41%, 84%);
 }
 input{
   text-align: right !important;
@@ -34,7 +35,6 @@ input{
 /* bill start */
 .bill-container{
  padding-bottom: 1rem;
-
 }
 .bill-text{
   display: block;
@@ -52,6 +52,8 @@ input{
  border-radius: 2px;
   padding-left: 30px;
   font-size: 16px;
+  color: hsl(183, 100%, 15%);
+   font-weight: 700;
 }
 .bill-input:focus{
   outline: none;
@@ -107,12 +109,16 @@ left:14vw;
   outline: 2px solid hsl(172, 67%, 45%);
 }
 /* select tip section end */
+
+/* number-container section start */
 .number-container{
   width: 80%;
   margin:.5rem 10% ;
 }
 .number-text{
-font-size: .7rem;
+font-size: .6rem;
+position: relative;
+width: 10px;
 }
 .number-input{
   height: 1.5rem;
@@ -122,10 +128,126 @@ font-size: .7rem;
 .number-input{
   background:hsl(189, 41%, 97%) ;
 }
-/* number-container section start */
-
+.person-icon{
+  position: relative;
+  top: 1.5rem;
+  left: 5vw;
+}
 /* number-container section end */
 
+/* result section */
+.result{
+  background:hsl(183, 100%, 15%) ;
+  height: 300px;
+  margin: 1rem;
+  border-radius: 1rem;
+  padding: 5%;
+  padding-top: 2rem;
+  padding-right: 0;
+  position: relative;
+}
+.result strong{
+  display: block;
+  color: white;
+  height: 1.3rem;
+  font-size: 18px;
+}
+.result span{
+  font-size: .7rem;
+}
+.reset-btn{
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  bottom: 8%;
+  width: 90%;
+  background: hsl(172, 67%, 45%);
+  border: none;
+  border-radius: 10px;
+  color: hsl(183, 100%, 15%);
+  cursor: pointer;
+  padding: 5px;
+  transition: 1s background;
+}
+.reset-btn:hover{
+  background: hsl(183, 100%, 15%);
+  color:hsl(172, 67%, 45%) ;
+}
+.result-amount-text{
+  margin-bottom: .7rem;
+  display: inline-block;
+}
+.amount-result,.total-result{
+  position: absolute;
+  font-weight: 700;
+  color: hsl(172, 67%, 45%);
+  right: 5%;
+}
+.amount-result{
+  bottom: 8rem;
+}
+.total-result{
+  bottom:5rem;
+}
 /* calculator end */
 
+/* desktop */
+@media screen and (min-width: 800px) {
+  /* defaults */
+main {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.calculator{
+ width: 60vw;
+ padding-top: 2rem;
+ height: 450px;
+ border-radius: 1rem;
+}
+.logo{
+  margin-top: 50px;
+}
+  /* defaults end */
 
+  /* bill start */
+.bill-input{
+ width: 25vw;
+ margin-left: 13vw;
+ height: 1.6rem;
+ font-size: 1rem;
+}
+.bill-text{
+  padding-left: 3vw;
+}
+.bill-dollar-icon{
+left:4vw;
+}
+/* bill end */
+
+/* tip section */
+.buttons-container{
+  grid-template-columns: 8vw 8vw 8vw;
+  grid-gap:.5rem;
+  justify-content: flex-start;
+  padding-left: 3vw;
+}
+.tip-container {
+  width: 35vw;
+}
+.customPercent-input{
+  font-size: 1.4vw;
+}
+.result{
+  background:hsl(183, 100%, 15%) ;
+  height: 400px;
+  padding-right: 0;
+  width: 25vw;
+  left: 30vw;
+  bottom: 285px;
+}
+.number-container{
+  display: none;
+}
+}
